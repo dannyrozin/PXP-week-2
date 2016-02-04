@@ -3,9 +3,9 @@
 // rotational symmetry, change the rotationAngle 
 
 int rotationAngle=30;
-float pixelR =127;
-float pixelG =127;
-float pixelB =127;
+int pixelR =127;
+int pixelG =127;
+int pixelB =127;
 void setup() {
   size(1000, 800);
   noStroke();
@@ -16,9 +16,10 @@ void draw() {
   int pixelShape = (int) random(3);             // randomize all atributes of the "pixel"
   float pixelWidth= random(30);
   float pixelHeight= random(30);
-  pixelR += random(-10, 10) ;
+  pixelR += random(-10, 10) ;                   
   pixelG += random(-10, 10);
   pixelB += random(-10, 10);
+  pixelR %=255 ; pixelG %=255 ; pixelB %=255 ;   // make sure we are in the range 0-255
   translate(width/2, height/2);                  // translate to the middle of screen because rotate()centers on 0, 0
   for (int i=0; i<360; i+=rotationAngle) {        
     drawMyShape(mouseX-width/2, mouseY-height/2, pixelWidth, pixelHeight, pixelR, pixelG, pixelB, pixelShape);
