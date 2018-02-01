@@ -1,4 +1,4 @@
-// // The world pixel by pixel 2016
+// // The world pixel by pixel 2018
 // Daniel Rozin
 //  grid of rects changing the stroke weight with mouse
 
@@ -12,9 +12,9 @@ void draw(){
   background (255);
   for (int x = 0; x < width ; x+=cellSize){
      for (int y = 0; y < height ; y+=cellSize){
-       fill(x,second(),mouseX);            // give it some color and interactivilty
+       fill(x,second()*4,mouseX);            // give it some color and interactivilty
        float distanceToMouse= dist(x,y, mouseX, mouseY);
-       strokeWeight (distanceToMouse/50);
+       strokeWeight (distanceToMouse/50);      // we want a small number so divide by 50
        rect(x,y,10,10);
      }
   }  

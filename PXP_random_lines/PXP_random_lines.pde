@@ -1,4 +1,4 @@
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
 // paint lines
 
@@ -8,13 +8,14 @@ void setup() {
 }
 
 void draw() {
-  stroke (255,255,0);
-  for (int i = 0; i< 1000; i+=10){
-  float thisX= mouseX + random(-i,i);
-   float thisY= mouseY + random(-i,i);
-  line(thisX,thisY, lastX, lastY);
-  lastX = thisX; lastY= thisY;
+  stroke (255, 255, 0);
+  for (int i = 0; i< 1000; i+=10) {
+    float thisX= mouseX + random(-i, i);
+    float thisY= mouseY + random(-i, i);
+    line(thisX, thisY, lastX, lastY);
+    lastX = thisX; 
+    lastY= thisY;
   }
-  fill(0,0,255, 5);
-  rect(0,0,width, height);
+  fill(0, 0, 255, 5);
+  rect(0, 0, width, height);
 }

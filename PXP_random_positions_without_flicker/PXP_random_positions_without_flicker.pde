@@ -1,4 +1,4 @@
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
 // Random positioning of elements with array to store the randoms
 
@@ -8,8 +8,7 @@ float randomXPositions[]= new float[0];     // creating an empty array of floats
 float randomYPositions[]= new float[0];     // creating an empty array of floats
 void setup() {
   size(1000, 800);  
-  for (int i = 0; i < numOfElements; i++) {   
-                                            // adding random numbers to the array
+  for (int i = 0; i < numOfElements; i++) {                                              // adding random numbers to the array
     randomXPositions= append( randomXPositions, random(width));
     randomYPositions= append( randomYPositions, random(height));
   }

@@ -1,14 +1,15 @@
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
-// Using an object to store all attributes of our "pixel"
+// Using a class and objects to store all attributes of our "pixel"
 
 int numOfElements=5000;           //  how many to draw every frame
 myPixel myPixels[]= new myPixel[0];     // creating an empty array of type myPixel (the class name)
+
 void setup() {
   size(1000, 800);  
   for (int i = 0; i < numOfElements; i++) {   
     myPixel tempPixel= new myPixel();                 // creating a new instance of the class myPixel
-    myPixels= (myPixel[])append(myPixels, tempPixel); // adding the new instance to the array
+    myPixels= (myPixel[]) append(myPixels, tempPixel); // adding the new instance to the array , we need to cast it as a (miPixel array)
   }
   noStroke();
 }

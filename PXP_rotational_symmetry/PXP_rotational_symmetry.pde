@@ -1,11 +1,11 @@
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
 // rotational symmetry, change the rotationAngle 
 
 int rotationAngle=30;
-int pixelR =127;
-int pixelG =127;
-int pixelB =127;
+int pixelR =200;
+int pixelG =200;
+int pixelB =200;
 void setup() {
   size(1000, 800);
   noStroke();
