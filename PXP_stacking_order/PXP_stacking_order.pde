@@ -1,4 +1,4 @@
-// The world pixel by pixel 2018
+// The world pixel by pixel 2019
 // Daniel Rozin
 // change the stacking order by giving a Z value
 
@@ -14,7 +14,7 @@ void draw(){
      for (int y = 0; y < height ; y+=cellSize){
        float distanceToMouse= dist(x,y,mouseX, mouseY);
        pushMatrix();                      // we want a fresh matrix for every item
-       translate(0,0,distanceToMouse/1.0); // we are translating just on the Z axis
+       translate(0,0,distanceToMouse); // we are translating just on the Z axis
        fill(distanceToMouse);            // give it some color and interactivilty
        ellipse(x,y,cellSize*2,cellSize*2);
        popMatrix();                        // pop thre matrix so we can start fresh
