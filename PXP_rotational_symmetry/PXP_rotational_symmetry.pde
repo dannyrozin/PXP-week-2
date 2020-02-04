@@ -1,6 +1,6 @@
-// The world pixel by pixel 2019
+// The world pixel by pixel 2020
 // Daniel Rozin
-// rotational symmetry, change the rotationAngle 
+// rotational symmetry, change rotationAngle  to get different density
 
 int rotationAngle=30;
 int pixelR =200;

@@ -1,4 +1,4 @@
-// The world pixel by pixel 2019
+// The world pixel by pixel 2020
 // Daniel Rozin
 // paint shapes
 
@@ -6,8 +6,9 @@
 void setup() {
   size(1000, 800);
 }
+void draw(){}  // nothing here, move on
 
-void draw() {
+void mouseDragged() {                            // paint only when mouse is pressed and moving
   int pixelShape = (int) random(3);             // randomize all atributes of the "pixel"
   float pixelWidth= random(30);
   float pixelHeight= random(30);
