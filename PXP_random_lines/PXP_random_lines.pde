@@ -16,6 +16,6 @@ void draw() {
     lastX = thisX; 
     lastY= thisY;
   }
-  fill(0, 0, 255, 5);
-  rect(0, 0, width, height);
+  fill(0, 0, 255, 5);                    // draw a transparent blue rectangle above everything
+  rect(0, 0, width, height);             // this makes the lines desolve to blue
 }
