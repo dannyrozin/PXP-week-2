@@ -1,4 +1,4 @@
-/* The world pixel by pixel 2021
+/* The world pixel by pixel 2022
  // Daniel Rozin
  get data from a CSV file and use it to draw something
  */

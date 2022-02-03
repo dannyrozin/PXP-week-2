@@ -1,6 +1,6 @@
-// The world pixel by pixel 2021
+// The world pixel by pixel 2022
 // Daniel Rozin
-// Using a class and objects to store all attributes of our "pixel"
+// Using a class and objects to store all attributes of our "pixel shape"
 
 int numOfElements=5000;           //  how many to draw every frame
 myPixel myPixels[]= new myPixel[0];     // creating an empty array of type myPixel (the class name)
